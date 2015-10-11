@@ -49,6 +49,6 @@ func sendEmail(user User, ctx context.Context) {
 	emailEngine.SendEmail(
 		[]string{user.Email},
 		"User Registration",
-		"<html><body>Exception 1</body></html>Exception 1",
+		"<html><body>Content for email registration</body></html>",
 	)
 }
